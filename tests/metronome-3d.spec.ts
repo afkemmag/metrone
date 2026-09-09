@@ -13,6 +13,6 @@ test('page renders the 3D metronome with depth instead of the original', async (
   })).toBe(true);
   await expect(page.locator('.body-face')).toHaveCount(6);
   await page.getByRole('button', { name: 'Start metronome' }).click();
-  await expect.poll(() => page.locator('.pendulum').evaluate(el => new DOMMatrix(getComputedStyle(el).transform).b)).toBeGreaterThan(0.1);
-  await expect.poll(() => page.locator('.pendulum').evaluate(el => new DOMMatrix(getComputedStyle(el).transform).b)).toBeLessThan(-0.1);
+  await expect.poll(() => page.locator('.pendulum').evaluate(el => new DOMMatrix(getComputedStyle(el).transform).b), { intervals: [50] }).toBeGreaterThan(0.1);
+  await expect.poll(() => page.locator('.pendulum').evaluate(el => new DOMMatrix(getComputedStyle(el).transform).b), { intervals: [50] }).toBeLessThan(-0.1);
 });
