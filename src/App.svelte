@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onDestroy } from 'svelte';
   import Metronome3D from './Metronome3D.svelte';
+  import ThemeSwitcher from './ThemeSwitcher.svelte';
 
   let tempo = $state(120);
   let playing = $state(false);
@@ -84,7 +85,7 @@
 <div class="shell">
   <header>
     <a class="brand" href="./" aria-label="Metrone home"><span class="brand-mark" aria-hidden="true">/ /</span> metrone<span class="brand-dot">.</span></a>
-    <span class="header-note">A little structure. A lot of flow.</span>
+    <div class="header-actions"><span class="header-note">A little structure. A lot of flow.</span><ThemeSwitcher /></div>
   </header>
 
   <main>
