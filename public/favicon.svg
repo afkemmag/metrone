@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Metrone</title>
+  <rect width="64" height="64" rx="14" fill="#161916"/>
+  <path d="M27 11h10l14 43H13Z" fill="#35412e" stroke="#d0ef86" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M32 46 23 18" stroke="#e6eadd" stroke-width="3" stroke-linecap="round"/>
+  <path d="m21 24 7-2 3 9-7 2Z" fill="#d0ef86"/>
+  <circle cx="32" cy="46" r="4" fill="#d0ef86"/>
+  <path d="M12 55h40" stroke="#d0ef86" stroke-width="3" stroke-linecap="round"/>
+</svg>
